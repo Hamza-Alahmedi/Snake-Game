@@ -8,8 +8,24 @@
   </head>
   <body>
     <div id="gameContainer">
+      <div id="controls">
+        <div id="levelButtons">
+          <button class="levelBtn" data-speed="120">Easy (Slow)</button>
+          <button class="levelBtn active" data-speed="90">Medium</button>
+          <button class="levelBtn" data-speed="50">Hard (Fast)</button>
+        </div>
+      </div>
       <canvas id="gameBoard" width="500" height="500"></canvas>
-      <div id="scoreText">0</div>
+      <div id="scoreContainer">
+        <div class="scoreDisplay">
+          <span class="scoreLabel">Score:</span>
+          <span id="scoreText">0</span>
+        </div>
+        <div class="scoreDisplay">
+          <span class="scoreLabel">Best:</span>
+          <span id="bestScoreText">0</span>
+        </div>
+      </div>
       <button id="resetBtn">Reset</button>
     </div>
     <script src="index.js"></script>
